@@ -17,16 +17,16 @@ class Solution:
     
     # chat GPT answer, note use of nums=list(number)
     class Solution:
-    def removeDigit(self, number: str, digit: str) -> str:
-        dig = int(digit)
-        nums = list(number)
-        for i in range(len(nums)):
-            if int(nums[i]) == dig:
-                del(nums[i])
-                break
-        # Convert the list of numbers to a string of numbers
-        number_string = ''.join(nums)
-        return number_string
+        def removeDigit(self, number: str, digit: str) -> str:
+            dig = int(digit)
+            nums = list(number)
+            for i in range(len(nums)):
+                if int(nums[i]) == dig:
+                    del(nums[i])
+                    break
+            # Convert the list of numbers to a string of numbers
+            number_string = ''.join(nums)
+            return number_string
 # this answer doesnt maximize the integer
 # didnt have the second conditional and didnt append ints to the first list 
 class Solution:

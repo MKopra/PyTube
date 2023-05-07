@@ -7,8 +7,8 @@ class Solution:
             binary = bin(numbers[i])
             binList.append(binary)
         for i, m in enumerate(binList):
+            count = 0 
             for n in m:
-                count = 0 
                 if n == '1':
                     count += 1
                 result.append(count)
