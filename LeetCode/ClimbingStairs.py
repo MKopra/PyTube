@@ -24,3 +24,11 @@ class Solution:
     
 # still not super sure, need to read alex's article all the way through and do Leetcode 509
 
+# recursive solution 
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n <= 2: 
+            return n
+        
+        return self.climbStairs(n-1)+self.climbStairs(n-2)
+        
